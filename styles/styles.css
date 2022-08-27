@@ -22,11 +22,6 @@ body {
   padding: 0;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 /* GLOBAL'S  */
 .container {
   width: 1200px;
