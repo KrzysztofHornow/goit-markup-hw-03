@@ -21,6 +21,12 @@ body {
   margin: 0;
   padding: 0;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 /* GLOBAL'S  */
 .container {
   width: 1200px;
@@ -39,7 +45,7 @@ body {
   padding: 0;
 }
 
-.section{
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
