@@ -21,9 +21,40 @@ body {
   margin: 0;
   padding: 0;
 }
+/* GLOBAL'S  */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .header-line-border {
   border-bottom: var(--lightcream) solid 1px;
+}
+
+.header-box {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166666666666667;
+  text-align: center;
+  color: var(--notblack);
+  margin: 0px 0 50px 0;
 }
 
 /* Nav-links and email/tel. */
@@ -31,11 +62,6 @@ body {
 .logo {
   background-color: var(--white);
   width: 1600px;
-  margin: 0 auto;
-}
-
-.container {
-  width: 1200px;
   margin: 0 auto;
 }
 
@@ -111,7 +137,6 @@ body {
   background-color: var(--notwhite);
   color: var(--notblack);
   border-width: 0;
-  height: 38px;
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
@@ -137,11 +162,13 @@ body {
   margin-top: 50px;
   margin-bottom: 94px;
   list-style: none;
+  justify-content: center;
 }
 .product-card {
   border: var(--productborder) solid 1px;
-  width: 370px;
+  flex-basis: calc((100% - 90px) / 4);
   height: 404px;
+  margin: 0;
 }
 .product-top {
   color: var(--notblack);
@@ -166,53 +193,42 @@ body {
 .order-service-background {
   background-color: var(--darkgrey);
   color: var(--white);
-  height: 600px;
   width: 100%;
-  text-align: center;
-  justify-content: center;
-  list-style-type: none;
   display: flex;
-  align-items: center;
+  gap: 30px;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
 }
 
 .order-service-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weigh: 900;
   font-size: 44px;
-  line-height: 80px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.364;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
-  width: 696;
-  height: 120;
 }
 
 .order-service-button {
   background-color: var(--blue);
+  border-style: none;
+  border-radius: 4px;
+  cursor: pointer;
   color: var(--white);
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  border-radius: 3px;
   width: 200px;
   height: 50px;
-  border: none;
-  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
 }
-
 /* LOREM INDEX.HTML */
 
 .lorem-box {
-  list-style-type: none;
-  flex-direction: row;
-  align-items: center;
   display: flex;
-  justify-content: space-evenly;
-  margin-right: auto;
-  margin-left: auto;
+  list-style: none;
+  flex-direction: row;
   gap: 30px;
+  justify-content: center;
 }
 
 .lorem-text-top {
@@ -235,6 +251,64 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   width: 270px;
+}
+
+/* OUR SERVICE INDEX.HTML*/
+
+.service {
+  align-items: center;
+  flex-direction: column;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  justify-content: center;
+}
+
+/* OUR TEAM  INDEX.HTML*/
+
+.our-team-bg {
+  background-color: var(--notwhite);
+}
+
+.our-team {
+  align-items: center;
+  flex-direction: column;
+}
+
+.our-team-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+  justify-content: center;
+}
+
+.our-team-box {
+  background-color: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  margin: 0;
+}
+
+.our-team-name {
+  margin: 30px 0 10px 0;
+  color: var(--notblack);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.1875;
+}
+
+.our-team-prof {
+  margin: 0 0 30px 0;
+  line-height: 1.1875;
+  font-size: 16px;
 }
 
 /* FOOTER */
@@ -269,14 +343,6 @@ body {
   line-height: 1.193;
   letter-spacing: 0.03em;
   text-decoration: none;
-}
-
-.no-underline {
-  text-decoration: none;
-}
-
-.no-margin {
-  margin: 0;
 }
 
 .link-footer {

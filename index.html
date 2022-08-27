@@ -4,6 +4,10 @@
  <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="./styles/modern-normalize.css"
+  />
     <link href="./styles/styles.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -49,21 +53,20 @@
       </header>
     <main>
       <section>
-        <ul class="order-service-background no-margin">
-          <li class="order-service-text">
-            <h1 >EFEKTYWNE ROZWIĄZANIA <br />
-              DLA WASZEGO BIZNESU</h1>
-            </li>
-            <li>
+        <div class="container order-service-background section">
+            <h1 class="order-service-text">EFEKTYWNE ROZWIĄZANIA <br />
+              DLA WASZEGO BIZNESU
+            </h1>
               <button type="button" class="order-service-button">Zamów usługę</button>
-            </li>
-          </ul>
+           
+          </div>
       </section>
       <section>
-        <ul class="lorem-box">
+        <div class="container section">
+        <ul class="lorem-box no-margin no-padding">
           <li>
             <h4 class="lorem-text-top">LOREM IPSUM</h4>
-            <p class="lotem-text-bottom">
+            <p class="lotem-text-bottom no-margin">
               Lorem ipsum dolor sit amet, consectetur<br />
               adipiscing elit. Nam vel arcu sem. Sed<br />
               non sodales dui. Interdum et malesuada
@@ -71,7 +74,7 @@
           </li>
           <li>
             <h4 class="lorem-text-top">LOREM IPSUM</h4>
-            <p class="lotem-text-bottom">
+            <p class="lotem-text-bottom no-margin">
               Lorem ipsum dolor sit amet, consectetur<br />
               adi cing elit. Nam vel arcu sem. Sed<br />
               non sodales dui. Interdum et malesuada
@@ -79,7 +82,7 @@
           </li>
           <li>
             <h4 class="lorem-text-top">LOREM IPSUM</h4>
-            <p class="lotem-text-bottom">
+            <p class="lotem-text-bottom no-margin">
               Lorem ipsum dolor sit amet, consectetur<br />
               adipiscing elit. Nam vel arcu sem. Sed<br />
               non sodales dui. Interdum et malesuada
@@ -87,17 +90,19 @@
           </li>
           <li>
             <h4 class="lorem-text-top">LOREM IPSUM</h4>
-            <p class="lotem-text-bottom">
+            <p class="lotem-text-bottom no-margin">
               Lorem ipsum dolor sit amet, consectetur<br />
               adipiscing elit. Nam vel arcu sem. Sed<br />
               non sodales dui. Interdum et malesuada
             </p>
           </li>
         </ul>
+        </div>
       </section>
-      <section>
-        <h2>Czym się zajmujemy</h2>
-        <ul>
+      <section class="service ">
+          <div class="container section">
+        <h2 class="header-box">Czym się zajmujemy</h2>
+        <ul class="service-list no-padding">
           <li>
             <img
               src="./images/computer-writing-1.jpg"
@@ -124,11 +129,13 @@
             />
           </li>
         </ul>
+        </div>
       </section>
-      <section>
-        <h2>Nasz zespół</h2>
-        <ul>
-          <li>
+      <section class="our-team-bg">
+        <div class="container our-team section">
+        <h2 class="header-box no-margin">Nasz zespół</h2>
+        <ul class="our-team-list no-margin no-padding">
+          <li class="our-team-box">
             <img
               src="./images/glasses-guy.jpg"
               width="270"
@@ -136,21 +143,20 @@
               alt="Product Designer - John Doe"
             />
 
-            <h4>John Doe</h4>
-            <p>Product Designer</p>
+            <h4 class="our-team-name">John Doe</h4>
+            <p class="our-team-prof">Product Designer</p>
           </li>
-          <li>
+          <li class="our-team-box">
             <img
               src="./images/glasses-lady.jpg"
               width="270"
               height="260"
               alt="Frontend Developer - John Doe"
             />
-
-            <h4>John Doe</h4>
-            <p>Frontend Developer</p>
+            <h4 class="our-team-name">John Doe</h4>
+            <p class="our-team-prof">Frontend Developer</p>
           </li>
-          <li>
+          <li class="our-team-box">
             <img
               src="./images/smiling-guy.jpg"
               width="270"
@@ -158,10 +164,10 @@
               alt="Marketing - John Doe"
             />
 
-            <h4>John Doe</h4>
-            <p>Marketing</p>
+            <h4 class="our-team-name">John Doe</h4>
+            <p class="our-team-prof">Marketing</p>
           </li>
-          <li>
+          <li class="our-team-box">
             <img
               src="./images/glasses-guy-black.jpg"
               width="270"
@@ -169,10 +175,11 @@
               alt="UI Designer - John Doe"
             />
 
-            <h4>John Doe</h4>
-            <p>UI Designer</p>
+            <h4 class="our-team-name">John Doe</h4>
+            <p class="our-team-prof">UI Designer</p>
           </li>
         </ul>
+        </div>  
       </section>
     </main>
     <footer class="footer">
